@@ -1,0 +1,40 @@
+{
+  "name": "addtext-pastebin",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.ts",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "keywords": [],
+  "author": "technoeren13 <erenbaltaci7878@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "dayjs": "^1.10.7",
+    "dotenv": "^14.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "moment": "^2.29.1",
+    "mongoose": "^6.1.7",
+    "node-localstorage": "^2.2.1",
+    "path": "^0.12.7",
+    "pino": "^7.6.4",
+    "pino-pretty": "^7.5.0",
+    "prettierrc": "^0.0.0-5"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/express": "^4.17.13",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^17.0.10",
+    "@types/pino": "^7.0.5",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  },
+  "repository": "git@github.com:technoeren13/expressjs-pastebin-with-typescript.git"
+}

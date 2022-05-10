@@ -1,0 +1,273 @@
+<html>
+    <style>
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        header {
+            width: 100%;
+            padding-bottom: 25px;
+            flex-direction: column;
+        }
+
+        img {
+            margin-top: 1%;
+            max-width: 40%;
+            max-width: 48%;
+            min-height: 30%;
+            max-height: 40%;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .buttonElement {
+            background-color: #4caf50;
+            /* Green */
+            width: auto;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            padding: 1px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline;
+            font-size: 16px;
+            margin-left: 50%;
+            margin-top: 50px;
+            border-radius: 50px;
+        }
+        .fullnameButton {
+            background-color: #ac851c;
+            /* Green */
+            width: auto;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            padding: 1px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline;
+            font-size: 16px;
+            margin-left: 50%;
+            margin-top: 10px;
+            border-radius: 50px;
+        }
+        .clearCacheButton {
+            background-color: #ac851c;
+            /* Green */
+            width: auto;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            padding: 1px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline;
+            font-size: 16px;
+            margin-left: 50%;
+            margin-top: 10px;
+            border-radius: 50px;
+        }
+    </style>
+
+    <head>
+        <title>ALMANCA</title>
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+            integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"
+            integrity="sha256-zG8v+NWiZxmjNi+CvUYnZwKtHzFtdO8cAKUIdB8+U9I="
+            crossorigin="anonymous"
+        ></script>
+
+        <link rel="stylesheet" type="text/css" href="/css/index.css" />
+    </head>
+    <body>
+        <a>a</a>
+        <section class="flex">
+            <h1></h1>
+            <img src="" />
+            <h2></h2>
+        </section>
+
+        <button class="buttonElement" id="new">ZUFÄLLIG</button>
+        <button class="fullnameButton" id="ipucu">INFORMATION</button>
+        <button class="clearCacheButton" id="clear">Clear Cache</button>
+    </body>
+
+    <script>
+        const imageArray = [
+            {
+                img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Osaka07_D3M_Stefan_Holm.jpg/1200px-Osaka07_D3M_Stefan_Holm.jpg',
+                ipucu: 'HM',
+                fullname: 'Hochsprung Machen (Yüksek Atlama)',
+            },
+            {
+                img: 'https://images.france.fr/zeaejvyq9bhj/6CXIllPgxquW4iscyuIYe2/c1b437b9a5072b3a22bdd99a0a039f93/ville_du_mans_-_gilles_mousse2.jpg?w=1120&h=490&q=70&fl=progressive&fit=fill',
+                ipucu: 'AM',
+                fullname: 'autorennen machen',
+            },
+            {
+                img: 'https://d1pra95f92lrn3.cloudfront.net/media/thumb/8670_fit512.jpg',
+                ipucu: 'T',
+                fullname: 'im internet surfen',
+            },
+            {
+                img: 'https://images.lifeline.de/img/lexikon/origs23754/536947919-w1500-h1500/Gymnastik.jpg',
+                ipucu: 'GM',
+                fullname: 'Gymnastik Machen',
+            },
+            {
+                img: 'https://www.sportunterricht.ch/images/tischtennis.jpg',
+                ipucu: 'TS',
+                fullname: 'Tisch Tennis',
+            },
+            {
+                img: 'https://www.netzathleten.de/media/k2/items/cache/35074e53c46224c836ff259954ac295e_XL.jpg',
+                ipucu: 'SC',
+                fullname: 'schwimmen',
+            },
+            {
+                img: 'https://image.geo.de/30143620/t/4R/v3/w1440/r1.7778/-/kinder-computerspiele-f-215079801-jpg--81762-.jpg',
+                ipucu: 'CS',
+                fullname: 'CumputerSpiele Spielen',
+            },
+            {
+                img: 'https://10-raisons.fr/wp-content/uploads/2020/04/se-mettre-badminton.jpg',
+                ipucu: 'BS',
+                fullname: 'Badminton Spiele',
+            },
+            {
+                img: 'https://www.musikmachen.de/wp-content/uploads/2019/03/1903_Crashkurs_Wie_lange_es_dauer_bis_man_Gitarre_spielen_kann_1200x780_05.jpg',
+                ipucu: 'GS',
+                fullname: 'Gitarre Spielen',
+            },
+            {
+                img: 'https://heute-at-prod-images.imgix.net/2020/6/2/061a21d4-dc96-413c-9454-c1110afc6905.jpeg?auto=format,compress&w=640',
+                ipucu: 'BL',
+                fullname: 'Buch Lessen',
+            },
+            {
+                img: 'https://cdn.create.vista.com/api/media/medium/153039246/stock-photo-man-listening-music-in-earphones?token=',
+                ipucu: 'MH',
+                fullname: 'Music Horen',
+            },
+            {
+                img: 'https://cdn.create.vista.com/api/media/medium/548135870/stock-photo-young-slender-woman-helmet-rides?token=',
+                ipucu: 'RF',
+                fullname: 'Rad Fahren (Bisiklet)',
+            },
+            {
+                img: 'https://www.planet-wissen.de/gesellschaft/spiele_und_spielzeug/schach_spiel_der_koenige/tempxschachbrettgjpg100~_v-gseagaleriexl.jpg',
+                ipucu: 'SS',
+                fullname: 'Scah Spielen (Satranç)',
+            },
+            {
+                img: 'https://de.beatyesterday.org/wp-content/uploads/2018/03/2c4d5633592a76877559954cba5ef44d_2.jpg',
+                ipucu: 'GS',
+                fullname: 'Golf Spielen',
+            },
+            {
+                img: 'https://www.kuebler-sport.de/blog/wp-content/uploads/2019/11/volleyball-1375499_1920-1024x683.jpg',
+                ipucu: 'VS',
+                fullname: 'Volleyball Spielen',
+            },
+            {
+                img: 'https://www.dfb.de/fileadmin/_processed_/201903/csm_192714-2019-03-05_dfbto_e_aufmacher_6251e88dfa.jpg',
+                ipucu: 'FS',
+                fullname: 'Fußall Spielen',
+            },
+            {
+                img: 'https://www.rgv-sol.com/wp-content/uploads/2020/11/shutterstock_199288175-1024x683.jpg',
+                ipucu: 'BS',
+                fullname: 'Basketball Spielen',
+            },
+            {
+                img: 'https://i0.wp.com/popkultur.de/wp-content/uploads/klavierspielentipps.jpg',
+                ipucu: 'KS',
+                fullname: 'Klavier Spielen (Piyano)',
+            },
+            {
+                img: 'https://www.bevegt.de/wp-content/uploads/2018/02/spazieren-spaziergang-frauen-wald-720x360.jpg',
+                ipucu: 'SG',
+                fullname: 'Spazieren Gehen (Gezmek)',
+            },
+            {
+                img: 'https://image.stern.de/9244622/t/XY/v6/w1440/r1.7778/-/kochen-fuer-anfaenger.jpg',
+                ipucu: 'K',
+                fullname: 'Kochen',
+            },
+            {
+                img: 'https://cloudfront-eu-central-1.images.arcpublishing.com/rtl/X6A4K7VVTZFHRZYN3ILEOO3CMA.jpg',
+                ipucu: 'A',
+                fullname: 'ANGELN (Balık Tutmak)',
+            },
+            {
+                img: 'https://i.pinimg.com/564x/20/e4/0d/20e40d969e04056402d795b937e61143.jpg',
+                ipucu: 'T',
+                fullname: 'Tanzen (Dans)',
+            },
+            {
+                img: 'https://media.sport2000rent.com/uploads/media/_processed_/6/8/csm_blog-skifahren-lernen-image2_12c1eeb403.jpg',
+                ipucu: 'SF',
+                fullname: 'Ski Fahren (Kayak)',
+            },
+        ]
+
+        const image = document.querySelector('img')
+        const newbutton = document.getElementById('new')
+        const clearbutton = document.getElementById('clear')
+        const ipucubutton = document.getElementById('ipucu')
+
+        const a = document.querySelector('a')
+        const h1 = document.querySelector('h1')
+        const h2 = document.querySelector('h2')
+
+        window.onload = () => generateRandomPicture(imageArray)
+
+        newbutton.addEventListener('click', () => generateRandomPicture(imageArray))
+        clearbutton.addEventListener('click', () => localStorage.clear())
+
+        ipucubutton.addEventListener('click', () => {
+            const technoeren = imageArray.filter((c) => c.img === image.getAttribute('src'))[0].fullname
+            h2.innerText = `Ich finde toll ${technoeren} machen. \nIch kann nicht ${technoeren} machen. \nEr macht ${technoeren}`
+        })
+
+        const newItem = () => generateRandomPicture(imageArray)
+
+        function generateRandomPicture(array) {
+            h2.innerHTML = ''
+            let randomNum = Math.floor(Math.random() * array.length)
+            let randomItem = array[randomNum].img
+
+            let itemList = localStorage.getItem(randomItem)
+
+            if (itemList !== null) return newItem()
+
+            image.setAttribute('src', randomItem)
+
+            localStorage.setItem(randomItem, randomItem)
+
+            a.innerText = array[randomNum].ipucu
+        }
+    </script>
+</html>
